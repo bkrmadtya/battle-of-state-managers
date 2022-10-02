@@ -1,5 +1,8 @@
 import { FC } from 'react'
 
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
+
 type StateManagerProps = {
   Component: () => JSX.Element
   rawCode: string
@@ -11,7 +14,13 @@ const StateManager: FC<StateManagerProps> = ({ Component, rawCode, name }) => {
     <div>
       <h2>{name}</h2>
       <div style={{ display: 'flex', width: '100%' }}>
-        <pre style={{ flex: '1', fontSize: '0.8rem', textAlign: 'left' }}>{rawCode}</pre>
+        <SyntaxHighlighter
+          language="javascript"
+          style={vscDarkPlus}
+          wrapLongLines
+        >
+          {rawCode}
+        </SyntaxHighlighter>
         <div style={{ flex: '1' }}>
           <Component />
         </div>
