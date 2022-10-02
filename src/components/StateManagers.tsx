@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
 
-import StateManager from './StateManager'
+import CodeAndDemo from './CodeAndDemo'
 
 type JSXGlobImports = Record<string, () => JSX.Element>
 
@@ -15,7 +15,7 @@ const StateManagers = () => {
     <>
       {Object.keys(Managers).map(path => (
         <Suspense key={path} fallback={'Loading...'}>
-          <StateManager
+          <CodeAndDemo
             Component={Managers[path].default}
             rawCode={ManagersRawCodes[path]}
             name={Managers[path].default.name}
