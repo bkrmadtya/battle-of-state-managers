@@ -7,7 +7,7 @@ type CounterProps = {
 const Counter = ({ count, increaseCount }: CounterProps) => {
   return (
     <div className="card">
-      <h2>React.useState()</h2>
+      <h3>React.useState()</h3>
       <button onClick={increaseCount}>count is {count}</button>
     </div>
   )

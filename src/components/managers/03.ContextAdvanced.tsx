@@ -39,7 +39,7 @@ const Counter = () => {
 
   return (
     <div className="card">
-      <h2>React.useContext() Advanced</h2>
+      <h3>React.useContext() (Advanced)</h3>
       <button onClick={increaseCount}>count is {count}</button>
     </div>
   )

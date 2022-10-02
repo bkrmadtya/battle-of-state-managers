@@ -22,6 +22,7 @@ const StateManager: FC<StateManagerProps> = ({ Component, rawCode, name }) => {
           {rawCode}
         </SyntaxHighlighter>
         <div style={{ flex: '1' }}>
+          <h2>Demo</h2>
           <Component />
         </div>
       </div>
