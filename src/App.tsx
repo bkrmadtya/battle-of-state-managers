@@ -1,12 +1,12 @@
 import './App.css'
 
-import UseState from '@/components/managers/UseState'
+import StateManagers from '@/components/StateManagers'
 
 function App() {
   return (
     <div className="App">
       <h1>Battle of State Managers (React)</h1>
-      <UseState />
+      <StateManagers />
     </div>
   )
 }
