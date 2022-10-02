@@ -4,6 +4,7 @@ import * as path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/battle-of-state-managers',
   plugins: [react()],
   publicDir: './public',
   resolve: {
